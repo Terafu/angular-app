@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import {ArticleService} from "../Services/article.service";
 import {Article} from "../models/article";
 import {Observable} from "rxjs/Observable";
+import {FormBuilder} from '@angular/forms';
 
 @Component({
   selector: "app-articles",
@@ -22,4 +23,15 @@ export class ArticlesComponent implements OnInit {
     this._articles = this.articleService.getArticles();
   }
 
+  delete(article: Article) {
+    this.articleService.delete(article.id).subscribe(() => {
+      this._articles = this.articleService.getArticles();
+    });
+  }
+
+  update(article: Article) {
+    this.articleService.update(article).subscribe(() => {
+      this._articles = this.articleService.getArticles();
+    });
+  }
 }

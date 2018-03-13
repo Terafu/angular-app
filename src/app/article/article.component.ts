@@ -1,4 +1,6 @@
-import {Component, Input, OnInit} from "@angular/core";
+import {Component, EventEmitter, Input, OnInit, Output} from "@angular/core";
+import {Article} from "../models/article";
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: "app-article",
@@ -6,31 +8,52 @@ import {Component, Input, OnInit} from "@angular/core";
   styleUrls: ["./article.component.css"]
 })
 export class ArticleComponent implements OnInit {
-  @Input("id") _id: string;
-  @Input("title") _title: string;
-  @Input("content") _content: string;
-  @Input("author") _author: string;
+  @Input("article") _article: Article;
 
-  constructor() {
+  articleForm: FormGroup;
+
+  @Output() deletedArticle: EventEmitter<Article> = new EventEmitter();
+  @Output() updatedArticle: EventEmitter<Article> = new EventEmitter();
+
+  constructor(private fb: FormBuilder) {
   }
 
-  public id(): string {
-    return this._id;
+  public article(): Article {
+    return this._article;
   }
 
   public title(): string {
-    return this._title;
+    return this._article.title;
   }
 
   public content(): string {
-    return this._content;
+    return this._article.content;
   }
 
   public author(): string {
-    return this._author;
+    return this._article.author;
+  }
+
+  public id(): number {
+    return this._article.id;
+  }
+
+  public delete() {
+    this.deletedArticle.emit(this._article);
+  }
+
+  public update() {
+    console.log(this.articleForm.value);
+    this.updatedArticle.emit(this.articleForm.value);
   }
 
   ngOnInit() {
+    this.articleForm = this.fb.group({
+      title: [this._article.title, Validators.required ],
+      content: [this._article.content, Validators.required ],
+      author: [this._article.author, Validators.required ],
+      id: [this._article.id],
+    });
 
   }
 }

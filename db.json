@@ -1,18 +1,28 @@
 {
-  "articles" : [{
-    "id": "1",
-    "title": "Mon premier article",
-    "content": "Oh, loneliness and cheeseburgers are a dangerous mix. Jesus must be spinning in his grave! Oh, loneliness and cheeseburgers are a dangerous mix. No children have ever meddled with the Republican Party and lived to tell about it.",
-    "author": "Moi"
-  }, {
-    "id": "2",
-    "title": "Mon deuxième article",
-    "content": "Kids, kids. I'm not going to die. That only happens to bad people. You know, the one with all the well meaning rules that don't work out in real life, uh, Christianity. Inflammable means flammable? What a country.",
-    "author": "Moi"
-  }, {
-    "id": "3",
-    "title": "Mon troisième article",
-    "content": "Books are useless! I only ever read one book, \"To Kill A Mockingbird\", and it gave me absolutely no insight on how to kill mockingbirds! Sure it taught me not to judge a man by the color of his skin…but what good does *that* do me? Kids, you tried your best and you failed miserably. The lesson is, never try.",
-    "author": "Moi"
-  }]
+  "articles": [
+    {
+      "title": "Mon premier",
+      "content": "Oh, loneliness and cheeseburgers are a dangerous mix. Jesus must be spinning in his grave! Oh, loneliness and cheeseburgers are a dangerous mix. No children have ever meddled with the Republican Party and lived to tell about it.",
+      "author": "Moi&Moi",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "title": "Mon deuxième article",
+      "content": "Kids, kids. I'm not going to die. That only happens to bad people. You know, the one with all the well meaning rules that don't work out in real life, uh, Christianity. Inflammable means flammable? What a country.",
+      "author": "Moi"
+    },
+    {
+      "title": "Mon Troisième Article",
+      "content": "bcuezbci",
+      "author": "Moi",
+      "id": 3
+    },
+    {
+      "title": "Mon Quatrième Article",
+      "content": "vjzvobzobo",
+      "author": "Moi",
+      "id": 4
+    }
+  ]
 }
