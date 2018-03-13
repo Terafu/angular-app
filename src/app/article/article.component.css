@@ -12,3 +12,15 @@ div {
 .justify-text {
   text-align: justify;
 }
+
+input {
+  background-color: #E2E2E2;
+  border : none;
+}
+
+textarea{
+  background-color: #E2E2E2;
+  border : none;
+}
+
+
