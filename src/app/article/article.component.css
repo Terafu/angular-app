@@ -1,0 +1,13 @@
+div {
+  background-color: #E2E2E2;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.justify-text {
+  text-align: justify;
+}
