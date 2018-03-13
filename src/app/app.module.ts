@@ -10,11 +10,12 @@ import { HttpClientModule } from "@angular/common/http";
 import { ArticleCreationComponent } from "./article-creation/article-creation.component";
 import { ReactiveFormsModule } from "@angular/forms";
 import { RouterModule, Routes } from "@angular/router";
+import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
   { path: "create", component: ArticleCreationComponent },
   { path: "articles", component: ArticlesComponent },
-  { path: "", component: ArticlesComponent }
+  { path: "", component: HomeComponent }
 ]
 
 @NgModule({
@@ -22,7 +23,8 @@ const appRoutes: Routes = [
     AppComponent,
     ArticleComponent,
     ArticlesComponent,
-    ArticleCreationComponent
+    ArticleCreationComponent,
+    HomeComponent
   ],
   imports: [
     RouterModule.forRoot(
