@@ -1,1 +1,2 @@
-<app-article *ngFor="let article of articles() | async" [article]=article (deletedArticle)="delete($event)" (updatedArticle)="update($event)"></app-article>
+<input #searchTerm (keyup)="true" class="form-control" type="search" placeholder="Search" aria-label="Search">
+<app-article *ngFor="let article of (articles() | articlesFilter : searchTerm.value) | async " [article]=article (deletedArticle)="delete($event)" (updatedArticle)="update($event)"></app-article>

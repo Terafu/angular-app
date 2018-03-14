@@ -10,7 +10,8 @@ import { HttpClientModule } from "@angular/common/http";
 import { ArticleCreationComponent } from "./article-creation/article-creation.component";
 import { ReactiveFormsModule } from "@angular/forms";
 import { RouterModule, Routes } from "@angular/router";
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from "./home/home.component";
+import { ArticlesFilterPipe } from "./articles-filter.pipe";
 
 const appRoutes: Routes = [
   { path: "create", component: ArticleCreationComponent },
@@ -24,7 +25,8 @@ const appRoutes: Routes = [
     ArticleComponent,
     ArticlesComponent,
     ArticleCreationComponent,
-    HomeComponent
+    HomeComponent,
+    ArticlesFilterPipe
   ],
   imports: [
     RouterModule.forRoot(

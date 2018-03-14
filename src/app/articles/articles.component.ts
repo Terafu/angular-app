@@ -2,7 +2,8 @@ import { Component, OnInit } from "@angular/core";
 import {ArticleService} from "../Services/article.service";
 import {Article} from "../models/article";
 import {Observable} from "rxjs/Observable";
-import {FormBuilder} from '@angular/forms';
+import {FormBuilder} from "@angular/forms";
+import { ArticlesFilterPipe } from "../articles-filter.pipe";
 
 @Component({
   selector: "app-articles",
