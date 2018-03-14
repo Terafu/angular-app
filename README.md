@@ -1,3 +1,18 @@
+# Application
+  # Author 
+  BETTUZZI Luc, DUFOUR Maxime
+  @Polytech Paris-sud.
+  Informatique APP5.
+
+  # Search function on articles
+  Based on title, content and author. 
+  Not case sensitive.
+
+  # Functions
+  Create Read Update and Delete active
+
+# Technology 
+
 # SimpleApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
